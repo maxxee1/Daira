@@ -1,7 +1,6 @@
 const popupMessages = [
   "Segura? 🤨",
-  "No me mientas 😤",
-  "Te estoy observando 👀"
+  "No me mientas 😤"
 ];
 
 let messageIndex = 0;
@@ -30,8 +29,8 @@ function checkLogin() {
   const user = document.getElementById('username').value;
   const pass = document.getElementById('password').value;
 
-  const correctUser = "dulce🤯";
-  const correctPass = "02082025";
+  const correctUser = "daira😝";
+  const correctPass = "03082025";
 
   if (user === correctUser && pass === correctPass) {
     document.getElementById('loginForm').classList.remove('active');
