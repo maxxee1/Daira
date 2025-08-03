@@ -1,0 +1,151 @@
+/* === POPUP, LOGIN & MODALS RESPONSIVE === */
+
+.popup,
+.get-out,
+.login,
+.success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff0f6;
+  border: 2px solid #ff9aa2;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.5);
+  z-index: 100;
+  animation: fadeIn 0.4s ease;
+}
+
+.popup.active,
+.get-out.active,
+.login.active,
+.success.active {
+  display: flex;
+}
+
+.popup h2,
+.login h2 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffb6c1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8fa3;
+}
+
+#hintMsg,
+#loginStatus {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  white-space: pre-line;
+}
+
+.get-out img,
+.success img {
+  width: 250px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #fcbad3;
+  margin-bottom: 15px;
+}
+
+.get-out p,
+.success p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d72638;
+  margin-bottom: 10px;
+}
+
+.restart-btn {
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #d72638;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* === RESPONSIVE MOBILE === */
+@media (max-width: 600px) {
+  .popup,
+  .get-out,
+  .login,
+  .success {
+    width: 95%;
+    padding: 25px 20px;
+  }
+
+  .popup h2,
+  .login h2 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .get-out p,
+  .success p {
+    font-size: 1rem;
+  }
+
+  .restart-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ✨ Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

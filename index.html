@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aaaaa?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="popup active" id="popup">
+    <h2>Eres dulce? 🧐</h2>
+    <button onclick="handleYes()">Yep🙎🏻‍♀️ྀིྀི </button>
+    <button onclick="handleNo()">No 🙅‍♀️</button>
+  </div>
+
+  <div class="get-out" id="getOut">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGZreGhrcThtdWJvcDVtcmRyMmxxNjhhaXI1ODFoNzdyMzQyZmVybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KoMmz5egND7b7mWtRz/giphy.gif" alt="Get tf out" />
+    <p>Pa jueraaaa 😤</p>
+    <button class="restart-btn" onclick="location.reload()">↩ Restart</button>
+  </div>
+
+  <div class="login" id="loginForm">
+    <h2>🔒 Login</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="checkLogin()">Login</button>
+    <button onclick="showHint()">Pista 🕵️‍♀️</button>
+    <div id="hintMsg"></div>
+    <div id="loginStatus"></div>
+  </div>
+
+  <!-- Success GIF container -->
+  <div class="success" id="successMsg">
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmhsbHM2YXI3amliemt4Z3F6d21wdzljanBwYTY3bDMxZTRua3MzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEjI53nBYOOEQgDcY/giphy.gif" alt="Success!" />
+    <p> sabia que podrias 🙎🏻‍♀️ྀིྀི Redirecting...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
